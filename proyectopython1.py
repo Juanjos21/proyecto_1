@@ -35,7 +35,7 @@ def evaluar_estado(promedio):
     if promedio >= 4.0:
         return "Aprobado✅"
     elif promedio >= 3.0 and promedio < 4.0: 
-        return "En recuperacion😒"
+        return "En recuperación😒"
     else:
         return "Reprobado ❌" 
     
@@ -50,7 +50,7 @@ while opcion != 2:
     print("\n🙋===== SISTEMA DE ESTUDIANTES =====🙋\n")
     print ("1️⃣  Registrar estudiante")
     print ("2️⃣  Salir\n")
-    opcion = int(input("Seleccione una opcion: "))
+    opcion = int(input("Seleccione una opción: "))
 
     
     if opcion == 1:
@@ -59,7 +59,7 @@ while opcion != 2:
         print (f"\n Promedio del estudiante: {nombre} ", resultadoPromedio)
         
         estado = evaluar_estado(resultadoPromedio)
-        print ("Estado academico: ",estado )
+        print ("Estado académico: ",estado )
         
         estudiantesRegistrados += 1      
         promedioG += resultadoPromedio
